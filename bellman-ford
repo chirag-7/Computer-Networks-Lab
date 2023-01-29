@@ -10,7 +10,7 @@ int main()
     int costmat[20][20];
     int nodes,i,j,k,count=0;
     printf("\nEnter the number of nodes : ");
-    scanf("%d",&nodes);//Enter the nodes
+    scanf("%d",&nodes);
     printf("\nEnter the cost matrix :\n");
     for(i=0;i<nodes;i++)
     {
@@ -18,7 +18,7 @@ int main()
         {
             scanf("%d",&costmat[i][j]);
             costmat[i][i]=0;
-            rt[i].dist[j]=costmat[i][j];//initialise the distance equal to cost matrix
+            rt[i].dist[j]=costmat[i][j];
             rt[i].from[j]=j;
         }
     }
